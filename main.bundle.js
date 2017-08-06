@@ -152,6 +152,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+//import { ROUTER_PROVIDERS} from '@angular/router';
+//import { RouteConfig, ROUTER_DIRECTIVES } from '@angular/router';
 var AppComponent = (function () {
     function AppComponent(oc) {
         this.oc = oc;
@@ -164,7 +166,7 @@ var AppComponent = (function () {
     return AppComponent;
 }());
 AppComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Component */])({
         selector: 'app-root',
         template: __webpack_require__("../../../../../src/app/app.component.html"),
         styles: [__webpack_require__("../../../../../src/app/app.component.scss")]
@@ -183,11 +185,12 @@ var _a;
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__("../../../platform-browser/@angular/platform-browser.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__core_core_module__ = __webpack_require__("../../../../../src/app/core/core.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__project_project_module__ = __webpack_require__("../../../../../src/app/project/project.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__task_task_module__ = __webpack_require__("../../../../../src/app/task/task.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__shared_shared_module__ = __webpack_require__("../../../../../src/app/shared/shared.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common__ = __webpack_require__("../../../common/@angular/common.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__core_core_module__ = __webpack_require__("../../../../../src/app/core/core.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__project_project_module__ = __webpack_require__("../../../../../src/app/project/project.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__task_task_module__ = __webpack_require__("../../../../../src/app/task/task.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__shared_shared_module__ = __webpack_require__("../../../../../src/app/shared/shared.module.ts");
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -203,6 +206,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
 var AppModule = (function () {
     function AppModule() {
     }
@@ -211,18 +215,18 @@ var AppModule = (function () {
 AppModule = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* NgModule */])({
         declarations: [
-            __WEBPACK_IMPORTED_MODULE_2__app_component__["a" /* AppComponent */]
+            __WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* AppComponent */]
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
-            __WEBPACK_IMPORTED_MODULE_3__core_core_module__["a" /* CoreModule */],
+            __WEBPACK_IMPORTED_MODULE_4__core_core_module__["a" /* CoreModule */],
             //CdkModule,
-            __WEBPACK_IMPORTED_MODULE_4__project_project_module__["a" /* ProjectModule */],
-            __WEBPACK_IMPORTED_MODULE_5__task_task_module__["a" /* TaskModule */],
-            __WEBPACK_IMPORTED_MODULE_6__shared_shared_module__["a" /* SharedModule */]
+            __WEBPACK_IMPORTED_MODULE_5__project_project_module__["a" /* ProjectModule */],
+            __WEBPACK_IMPORTED_MODULE_6__task_task_module__["a" /* TaskModule */],
+            __WEBPACK_IMPORTED_MODULE_7__shared_shared_module__["a" /* SharedModule */]
         ],
-        providers: [],
-        bootstrap: [__WEBPACK_IMPORTED_MODULE_2__app_component__["a" /* AppComponent */]]
+        providers: [{ provide: __WEBPACK_IMPORTED_MODULE_2__angular_common__["a" /* APP_BASE_HREF */], useValue: '/' }],
+        bootstrap: [__WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* AppComponent */]]
     })
 ], AppModule);
 
@@ -305,7 +309,7 @@ CoreModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_5__app_routing_module__["a" /* AppRoutingModule */]
         ]
     }),
-    __param(0, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["g" /* Optional */])()), __param(0, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["l" /* SkipSelf */])()),
+    __param(0, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["f" /* Optional */])()), __param(0, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["F" /* SkipSelf */])()),
     __metadata("design:paramtypes", [CoreModule, typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__angular_material__["v" /* MdIconRegistry */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_material__["v" /* MdIconRegistry */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__angular_platform_browser__["e" /* DomSanitizer */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_platform_browser__["e" /* DomSanitizer */]) === "function" && _b || Object])
 ], CoreModule);
 
@@ -363,7 +367,7 @@ var FooterComponent = (function () {
     return FooterComponent;
 }());
 FooterComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Component */])({
         selector: 'app-footer',
         template: __webpack_require__("../../../../../src/app/core/footer/footer.component.html"),
         styles: [__webpack_require__("../../../../../src/app/core/footer/footer.component.scss")]
@@ -418,8 +422,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var HeaderComponent = (function () {
     function HeaderComponent() {
-        this.toggle = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["p" /* EventEmitter */]();
-        this.toggleDarkTheme = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["p" /* EventEmitter */]();
+        this.toggle = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["d" /* EventEmitter */]();
+        this.toggleDarkTheme = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["d" /* EventEmitter */]();
     }
     HeaderComponent.prototype.ngOnInit = function () {
     };
@@ -432,15 +436,15 @@ var HeaderComponent = (function () {
     return HeaderComponent;
 }());
 __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["q" /* Output */])(),
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* Output */])(),
     __metadata("design:type", Object)
 ], HeaderComponent.prototype, "toggle", void 0);
 __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["q" /* Output */])(),
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* Output */])(),
     __metadata("design:type", Object)
 ], HeaderComponent.prototype, "toggleDarkTheme", void 0);
 HeaderComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Component */])({
         selector: 'app-header',
         template: __webpack_require__("../../../../../src/app/core/header/header.component.html"),
         styles: [__webpack_require__("../../../../../src/app/core/header/header.component.scss")]
@@ -499,7 +503,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var SidebarComponent = (function () {
     function SidebarComponent() {
         this.today = 'day';
-        this.navClick = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["p" /* EventEmitter */]();
+        this.navClick = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["d" /* EventEmitter */]();
     }
     SidebarComponent.prototype.ngOnInit = function () {
         this.today = "day" + __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1_date_fns__["getDate"])(new Date());
@@ -510,11 +514,11 @@ var SidebarComponent = (function () {
     return SidebarComponent;
 }());
 __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["q" /* Output */])(),
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* Output */])(),
     __metadata("design:type", Object)
 ], SidebarComponent.prototype, "navClick", void 0);
 SidebarComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Component */])({
         selector: 'app-sidebar',
         template: __webpack_require__("../../../../../src/app/core/sidebar/sidebar.component.html"),
         styles: [__webpack_require__("../../../../../src/app/core/sidebar/sidebar.component.scss")]
@@ -590,7 +594,7 @@ var DragDropService = (function () {
     return DragDropService;
 }());
 DragDropService = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["j" /* Injectable */])(),
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["e" /* Injectable */])(),
     __metadata("design:paramtypes", [])
 ], DragDropService);
 
@@ -644,12 +648,12 @@ var DragDirective = (function () {
     return DragDirective;
 }());
 __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Input */])('app-draggable'),
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["p" /* Input */])('app-draggable'),
     __metadata("design:type", Boolean),
     __metadata("design:paramtypes", [Boolean])
 ], DragDirective.prototype, "isDraggable", null);
 __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Input */])(),
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["p" /* Input */])(),
     __metadata("design:type", String)
 ], DragDirective.prototype, "draggedClass", void 0);
 __decorate([
@@ -665,10 +669,10 @@ __decorate([
     __metadata("design:returntype", void 0)
 ], DragDirective.prototype, "onDragend", null);
 DragDirective = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["f" /* Directive */])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["k" /* Directive */])({
         selector: '[app-draggable][draggedClass]'
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["h" /* ElementRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["h" /* ElementRef */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Renderer2 */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Renderer2 */]) === "function" && _b || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* ElementRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* ElementRef */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Renderer2 */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Renderer2 */]) === "function" && _b || Object])
 ], DragDirective);
 
 var _a, _b;
@@ -719,7 +723,7 @@ var DropDirective = (function () {
     return DropDirective;
 }());
 __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Input */])(),
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["p" /* Input */])(),
     __metadata("design:type", String)
 ], DropDirective.prototype, "dragEnterClass", void 0);
 __decorate([
@@ -747,10 +751,10 @@ __decorate([
     __metadata("design:returntype", void 0)
 ], DropDirective.prototype, "onDrop", null);
 DropDirective = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["f" /* Directive */])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["k" /* Directive */])({
         selector: '[app-droppable]'
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["h" /* ElementRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["h" /* ElementRef */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Renderer2 */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Renderer2 */]) === "function" && _b || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* ElementRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* ElementRef */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Renderer2 */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Renderer2 */]) === "function" && _b || Object])
 ], DropDirective);
 
 var _a, _b;
@@ -901,11 +905,11 @@ var LoginComponent = (function () {
     return LoginComponent;
 }());
 LoginComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Component */])({
         selector: 'app-login',
         template: __webpack_require__("../../../../../src/app/login/login/login.component.html"),
         styles: [__webpack_require__("../../../../../src/app/login/login/login.component.scss")],
-        changeDetection: __WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* ChangeDetectionStrategy */].OnPush
+        changeDetection: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Q" /* ChangeDetectionStrategy */].OnPush
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_forms__["i" /* FormBuilder */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_forms__["i" /* FormBuilder */]) === "function" && _a || Object])
 ], LoginComponent);
@@ -978,7 +982,7 @@ var RegisterComponent = (function () {
     return RegisterComponent;
 }());
 RegisterComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Component */])({
         selector: 'app-register',
         template: __webpack_require__("../../../../../src/app/login/register/register.component.html"),
         styles: [__webpack_require__("../../../../../src/app/login/register/register.component.scss")]
@@ -1057,11 +1061,11 @@ var InviteComponent = (function () {
     return InviteComponent;
 }());
 InviteComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Component */])({
         selector: 'app-invite',
         template: __webpack_require__("../../../../../src/app/project/invite/invite.component.html"),
         styles: [__webpack_require__("../../../../../src/app/project/invite/invite.component.css")],
-        changeDetection: __WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* ChangeDetectionStrategy */].OnPush
+        changeDetection: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Q" /* ChangeDetectionStrategy */].OnPush
     }),
     __metadata("design:paramtypes", [])
 ], InviteComponent);
@@ -1132,13 +1136,13 @@ var NewProjectComponent = (function () {
     return NewProjectComponent;
 }());
 NewProjectComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Component */])({
         selector: 'app-new-project',
         template: __webpack_require__("../../../../../src/app/project/new-project/new-project.component.html"),
         styles: [__webpack_require__("../../../../../src/app/project/new-project/new-project.component.css")],
-        changeDetection: __WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* ChangeDetectionStrategy */].OnPush
+        changeDetection: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Q" /* ChangeDetectionStrategy */].OnPush
     }),
-    __param(0, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["d" /* Inject */])(__WEBPACK_IMPORTED_MODULE_1__angular_material__["s" /* MD_DIALOG_DATA */])),
+    __param(0, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["g" /* Inject */])(__WEBPACK_IMPORTED_MODULE_1__angular_material__["s" /* MD_DIALOG_DATA */])),
     __metadata("design:paramtypes", [Object, typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_material__["t" /* MdDialogRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_material__["t" /* MdDialogRef */]) === "function" && _a || Object])
 ], NewProjectComponent);
 
@@ -1192,9 +1196,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var ProjectItemComponent = (function () {
     function ProjectItemComponent() {
-        this.onInvite = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["p" /* EventEmitter */]();
-        this.onEdit = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["p" /* EventEmitter */]();
-        this.onDel = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["p" /* EventEmitter */]();
+        this.onInvite = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["d" /* EventEmitter */]();
+        this.onEdit = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["d" /* EventEmitter */]();
+        this.onDel = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["d" /* EventEmitter */]();
         this.cardState = 'out';
     }
     ProjectItemComponent.prototype.ngOnInit = function () {
@@ -1217,23 +1221,23 @@ var ProjectItemComponent = (function () {
     return ProjectItemComponent;
 }());
 __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Input */])(),
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["p" /* Input */])(),
     __metadata("design:type", Object)
 ], ProjectItemComponent.prototype, "item", void 0);
 __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["q" /* Output */])(),
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* Output */])(),
     __metadata("design:type", Object)
 ], ProjectItemComponent.prototype, "onInvite", void 0);
 __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["q" /* Output */])(),
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* Output */])(),
     __metadata("design:type", Object)
 ], ProjectItemComponent.prototype, "onEdit", void 0);
 __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["q" /* Output */])(),
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* Output */])(),
     __metadata("design:type", Object)
 ], ProjectItemComponent.prototype, "onDel", void 0);
 __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["z" /* HostBinding */])('@card'),
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["O" /* HostBinding */])('@card'),
     __metadata("design:type", Object)
 ], ProjectItemComponent.prototype, "cardState", void 0);
 __decorate([
@@ -1249,14 +1253,14 @@ __decorate([
     __metadata("design:returntype", void 0)
 ], ProjectItemComponent.prototype, "onMouseLeave", null);
 ProjectItemComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Component */])({
         selector: 'app-project-item',
         template: __webpack_require__("../../../../../src/app/project/project-item/project-item.component.html"),
         styles: [__webpack_require__("../../../../../src/app/project/project-item/project-item.component.css")],
         animations: [
             __WEBPACK_IMPORTED_MODULE_1__anims_card_anim__["a" /* cardAnim */]
         ],
-        changeDetection: __WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* ChangeDetectionStrategy */].OnPush
+        changeDetection: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Q" /* ChangeDetectionStrategy */].OnPush
     }),
     __metadata("design:paramtypes", [])
 ], ProjectItemComponent);
@@ -1361,20 +1365,20 @@ var ProjectListComponent = (function () {
     return ProjectListComponent;
 }());
 __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["z" /* HostBinding */])('@routeAnim'),
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["O" /* HostBinding */])('@routeAnim'),
     __metadata("design:type", Object)
 ], ProjectListComponent.prototype, "state", void 0);
 ProjectListComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Component */])({
         selector: 'app-project-list',
         template: __webpack_require__("../../../../../src/app/project/project-list/project-list.component.html"),
         styles: [__webpack_require__("../../../../../src/app/project/project-list/project-list.component.scss")],
         animations: [
             __WEBPACK_IMPORTED_MODULE_5__anims_router_anim__["a" /* slideToRight */]
         ],
-        changeDetection: __WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* ChangeDetectionStrategy */].OnPush
+        changeDetection: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Q" /* ChangeDetectionStrategy */].OnPush
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_material__["u" /* MdDialog */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_material__["u" /* MdDialog */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* ChangeDetectorRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* ChangeDetectorRef */]) === "function" && _b || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_material__["u" /* MdDialog */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_material__["u" /* MdDialog */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* ChangeDetectorRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* ChangeDetectorRef */]) === "function" && _b || Object])
 ], ProjectListComponent);
 
 var _a, _b;
@@ -1512,12 +1516,12 @@ var ConfirmDialogComponent = (function () {
     return ConfirmDialogComponent;
 }());
 ConfirmDialogComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Component */])({
         selector: 'app-confirm-dialog',
         template: "\n    <h3 md-dialog-title>{{title}}</h3>\n    <div md-dialog-content>\n      {{content}}\n    </div>\n    <div md-dialog-action>\n      <button type=\"button\" md-raised-button color=\"primary\" (click)=\"onClick(true)\">\u786E\u5B9A</button>\n      <button type=\"button\" md-dialog-close md-button (click) = onClick(false)>\u53D6\u6D88</button>\n    </div>\n  ",
         styles: []
     }),
-    __param(1, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["d" /* Inject */])(__WEBPACK_IMPORTED_MODULE_1__angular_material__["s" /* MD_DIALOG_DATA */])),
+    __param(1, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["g" /* Inject */])(__WEBPACK_IMPORTED_MODULE_1__angular_material__["s" /* MD_DIALOG_DATA */])),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_material__["t" /* MdDialogRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_material__["t" /* MdDialogRef */]) === "function" && _a || Object, Object])
 ], ConfirmDialogComponent);
 
@@ -1529,7 +1533,7 @@ var _a;
 /***/ "../../../../../src/app/shared/image-list-select/image-list-select.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div>\n  <span>{{title}}</span>\n  <md-icon class=\"avatar\" [svgIcon]=\"selected\"></md-icon>\n</div>\n<md-grid-list [cols]=\"cols\" [rowHeight]=\"rowHeight\">\n  <md-grid-tile *ngFor=\"let item of items; let i= index\">    \n    <div class=\"image-container\" (click)=\"onChange(i)\">\n      <md-icon class=\"avatar\" [svgIcon]=\"item\"></md-icon>\n      <div class=\"after\">\n        <div class=\"zoom\">\n          <md-icon></md-icon>\n        </div>\n      </div>\n    </div>\n  </md-grid-tile>\n</md-grid-list>"
+module.exports = "<div>\n  <span>{{title}}</span>\n  <md-icon class=\"avatar\" [svgIcon]=\"selected\" *ngIf=\"useSvgIcon else imgSelect \"></md-icon>\n  <ng-template> \n    <img [src]=\"selected\" alt=\"image selected\" class=\"cover\">\n  </ng-template>\n</div>\n<div class=\"scrollContainer\"> \n  <md-grid-list [cols]=\"cols\" [rowHeight]=\"rowHeight\">\n    <md-grid-tile *ngFor=\"let item of items; let i= index\">    \n      <div class=\"image-container\" (click)=\"onChange(i)\">\n        <md-icon class=\"avatar\" [svgIcon]=\"item\"></md-icon>\n        <div class=\"after\">\n          <div class=\"zoom\">\n            <md-icon class=\"avatar\" [svgIcon]=\"item\" *ngIf=\"useSvgIcon else imgItem\"></md-icon>\n            <ng-template #imgItem>\n              <img [src]=\"item\" alt=\"image item\" ngStyle=\"{'width': itemWidth}\">\n            </ng-template>\n          </div>\n        </div>\n      </div>\n    </md-grid-tile>\n  </md-grid-list> \n</div>\n"
 
 /***/ }),
 
@@ -1609,43 +1613,43 @@ var ImageListSelectComponent = ImageListSelectComponent_1 = (function () {
     return ImageListSelectComponent;
 }());
 __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Input */])(),
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["p" /* Input */])(),
     __metadata("design:type", Object)
 ], ImageListSelectComponent.prototype, "cols", void 0);
 __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Input */])(),
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["p" /* Input */])(),
     __metadata("design:type", Object)
 ], ImageListSelectComponent.prototype, "title", void 0);
 __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Input */])(),
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["p" /* Input */])(),
     __metadata("design:type", Object)
 ], ImageListSelectComponent.prototype, "rowHeight", void 0);
 __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Input */])(),
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["p" /* Input */])(),
     __metadata("design:type", Array)
 ], ImageListSelectComponent.prototype, "items", void 0);
 __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Input */])(),
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["p" /* Input */])(),
     __metadata("design:type", Object)
 ], ImageListSelectComponent.prototype, "useSvgIcon", void 0);
 __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Input */])(),
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["p" /* Input */])(),
     __metadata("design:type", Object)
 ], ImageListSelectComponent.prototype, "itemWidth", void 0);
 ImageListSelectComponent = ImageListSelectComponent_1 = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Component */])({
         selector: 'app-image-list-select',
         template: __webpack_require__("../../../../../src/app/shared/image-list-select/image-list-select.component.html"),
         styles: [__webpack_require__("../../../../../src/app/shared/image-list-select/image-list-select.component.scss")],
         providers: [
             {
                 provide: __WEBPACK_IMPORTED_MODULE_1__angular_forms__["c" /* NG_VALUE_ACCESSOR */],
-                useExisting: __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* forwardRef */])(function () { return ImageListSelectComponent_1; }),
+                useExisting: __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["L" /* forwardRef */])(function () { return ImageListSelectComponent_1; }),
                 multi: true
             },
             {
                 provide: __WEBPACK_IMPORTED_MODULE_1__angular_forms__["g" /* NG_VALIDATORS */],
-                useExisting: __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* forwardRef */])(function () { return ImageListSelectComponent_1; }),
+                useExisting: __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["L" /* forwardRef */])(function () { return ImageListSelectComponent_1; }),
                 multi: true
             }
         ]
@@ -1691,7 +1695,7 @@ var SharedModule = (function () {
 SharedModule = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["b" /* NgModule */])({
         imports: [
-            __WEBPACK_IMPORTED_MODULE_1__angular_common__["a" /* CommonModule */],
+            __WEBPACK_IMPORTED_MODULE_1__angular_common__["b" /* CommonModule */],
             __WEBPACK_IMPORTED_MODULE_3__angular_material__["a" /* MdToolbarModule */],
             __WEBPACK_IMPORTED_MODULE_3__angular_material__["b" /* MdIconModule */],
             __WEBPACK_IMPORTED_MODULE_3__angular_material__["c" /* MdButtonModule */],
@@ -1715,7 +1719,7 @@ SharedModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_2__angular_forms__["b" /* ReactiveFormsModule */]
         ],
         exports: [
-            __WEBPACK_IMPORTED_MODULE_1__angular_common__["a" /* CommonModule */],
+            __WEBPACK_IMPORTED_MODULE_1__angular_common__["b" /* CommonModule */],
             __WEBPACK_IMPORTED_MODULE_3__angular_material__["a" /* MdToolbarModule */],
             __WEBPACK_IMPORTED_MODULE_3__angular_material__["b" /* MdIconModule */],
             __WEBPACK_IMPORTED_MODULE_3__angular_material__["c" /* MdButtonModule */],
@@ -1804,13 +1808,13 @@ var CopyTaskComponent = (function () {
     return CopyTaskComponent;
 }());
 CopyTaskComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Component */])({
         selector: 'app-copy-task',
         template: __webpack_require__("../../../../../src/app/task/copy-task/copy-task.component.html"),
         styles: [__webpack_require__("../../../../../src/app/task/copy-task/copy-task.component.scss")],
-        changeDetection: __WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* ChangeDetectionStrategy */].OnPush
+        changeDetection: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Q" /* ChangeDetectionStrategy */].OnPush
     }),
-    __param(0, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["d" /* Inject */])(__WEBPACK_IMPORTED_MODULE_1__angular_material__["s" /* MD_DIALOG_DATA */])),
+    __param(0, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["g" /* Inject */])(__WEBPACK_IMPORTED_MODULE_1__angular_material__["s" /* MD_DIALOG_DATA */])),
     __metadata("design:paramtypes", [Object, typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_material__["t" /* MdDialogRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_material__["t" /* MdDialogRef */]) === "function" && _a || Object])
 ], CopyTaskComponent);
 
@@ -1880,13 +1884,13 @@ var NewTaskListComponent = (function () {
     return NewTaskListComponent;
 }());
 NewTaskListComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Component */])({
         selector: 'app-new-task-list',
         template: __webpack_require__("../../../../../src/app/task/new-task-list/new-task-list.component.html"),
         styles: [__webpack_require__("../../../../../src/app/task/new-task-list/new-task-list.component.scss")],
-        changeDetection: __WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* ChangeDetectionStrategy */].OnPush
+        changeDetection: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Q" /* ChangeDetectionStrategy */].OnPush
     }),
-    __param(0, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["d" /* Inject */])(__WEBPACK_IMPORTED_MODULE_1__angular_material__["s" /* MD_DIALOG_DATA */])),
+    __param(0, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["g" /* Inject */])(__WEBPACK_IMPORTED_MODULE_1__angular_material__["s" /* MD_DIALOG_DATA */])),
     __metadata("design:paramtypes", [Object, typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_material__["t" /* MdDialogRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_material__["t" /* MdDialogRef */]) === "function" && _a || Object])
 ], NewTaskListComponent);
 
@@ -1953,13 +1957,13 @@ var NewTaskComponent = (function () {
     return NewTaskComponent;
 }());
 NewTaskComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Component */])({
         selector: 'app-new-task',
         template: __webpack_require__("../../../../../src/app/task/new-task/new-task.component.html"),
         styles: [__webpack_require__("../../../../../src/app/task/new-task/new-task.component.scss")],
-        changeDetection: __WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* ChangeDetectionStrategy */].OnPush
+        changeDetection: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Q" /* ChangeDetectionStrategy */].OnPush
     }),
-    __param(0, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["d" /* Inject */])(__WEBPACK_IMPORTED_MODULE_1__angular_material__["s" /* MD_DIALOG_DATA */])),
+    __param(0, __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["g" /* Inject */])(__WEBPACK_IMPORTED_MODULE_1__angular_material__["s" /* MD_DIALOG_DATA */])),
     __metadata("design:paramtypes", [Object])
 ], NewTaskComponent);
 
@@ -2010,7 +2014,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var QuickTaskComponent = (function () {
     function QuickTaskComponent() {
-        this.quickTask = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["p" /* EventEmitter */]();
+        this.quickTask = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["d" /* EventEmitter */]();
     }
     QuickTaskComponent.prototype.ngOnInit = function () {
     };
@@ -2024,7 +2028,7 @@ var QuickTaskComponent = (function () {
     return QuickTaskComponent;
 }());
 __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["q" /* Output */])(),
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* Output */])(),
     __metadata("design:type", Object)
 ], QuickTaskComponent.prototype, "quickTask", void 0);
 __decorate([
@@ -2034,7 +2038,7 @@ __decorate([
     __metadata("design:returntype", void 0)
 ], QuickTaskComponent.prototype, "sendQuickTask", null);
 QuickTaskComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Component */])({
         selector: 'app-quick-task',
         template: __webpack_require__("../../../../../src/app/task/quick-task/quick-task.component.html"),
         styles: [__webpack_require__("../../../../../src/app/task/quick-task/quick-task.component.scss")]
@@ -2090,10 +2094,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var TaskHeaderComponent = (function () {
     function TaskHeaderComponent() {
         this.header = '';
-        this.newTask = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["p" /* EventEmitter */]();
-        this.moveAll = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["p" /* EventEmitter */]();
-        this.delList = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["p" /* EventEmitter */]();
-        this.onEditList = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["p" /* EventEmitter */]();
+        this.newTask = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["d" /* EventEmitter */]();
+        this.moveAll = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["d" /* EventEmitter */]();
+        this.delList = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["d" /* EventEmitter */]();
+        this.onEditList = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["d" /* EventEmitter */]();
     }
     TaskHeaderComponent.prototype.ngOnInit = function () {
     };
@@ -2112,31 +2116,31 @@ var TaskHeaderComponent = (function () {
     return TaskHeaderComponent;
 }());
 __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Input */])(),
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["p" /* Input */])(),
     __metadata("design:type", Object)
 ], TaskHeaderComponent.prototype, "header", void 0);
 __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["q" /* Output */])(),
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* Output */])(),
     __metadata("design:type", Object)
 ], TaskHeaderComponent.prototype, "newTask", void 0);
 __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["q" /* Output */])(),
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* Output */])(),
     __metadata("design:type", Object)
 ], TaskHeaderComponent.prototype, "moveAll", void 0);
 __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["q" /* Output */])(),
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* Output */])(),
     __metadata("design:type", Object)
 ], TaskHeaderComponent.prototype, "delList", void 0);
 __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["q" /* Output */])(),
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* Output */])(),
     __metadata("design:type", Object)
 ], TaskHeaderComponent.prototype, "onEditList", void 0);
 TaskHeaderComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Component */])({
         selector: 'app-task-header',
         template: __webpack_require__("../../../../../src/app/task/task-header/task-header.component.html"),
         styles: [__webpack_require__("../../../../../src/app/task/task-header/task-header.component.scss")],
-        changeDetection: __WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* ChangeDetectionStrategy */].OnPush
+        changeDetection: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Q" /* ChangeDetectionStrategy */].OnPush
     }),
     __metadata("design:paramtypes", [])
 ], TaskHeaderComponent);
@@ -2297,18 +2301,18 @@ var TaskHomeComponent = (function () {
     return TaskHomeComponent;
 }());
 __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["z" /* HostBinding */])('@routeAnim'),
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["O" /* HostBinding */])('@routeAnim'),
     __metadata("design:type", Object)
 ], TaskHomeComponent.prototype, "state", void 0);
 TaskHomeComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Component */])({
         selector: 'app-task-home',
         template: __webpack_require__("../../../../../src/app/task/task-home/task-home.component.html"),
         styles: [__webpack_require__("../../../../../src/app/task/task-home/task-home.component.scss")],
         animations: [__WEBPACK_IMPORTED_MODULE_6__anims_router_anim__["a" /* slideToRight */]],
-        changeDetection: __WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* ChangeDetectionStrategy */].OnPush
+        changeDetection: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Q" /* ChangeDetectionStrategy */].OnPush
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_material__["u" /* MdDialog */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_material__["u" /* MdDialog */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* ChangeDetectorRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* ChangeDetectorRef */]) === "function" && _b || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_material__["u" /* MdDialog */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_material__["u" /* MdDialog */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* ChangeDetectorRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* ChangeDetectorRef */]) === "function" && _b || Object])
 ], TaskHomeComponent);
 
 var _a, _b;
@@ -2361,7 +2365,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var TaskItemComponent = (function () {
     function TaskItemComponent() {
-        this.taskClick = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["p" /* EventEmitter */]();
+        this.taskClick = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["d" /* EventEmitter */]();
         //@HostBinding('@item') itemState = 'in';
         this.widerPriority = 'in';
     }
@@ -2383,15 +2387,15 @@ var TaskItemComponent = (function () {
     return TaskItemComponent;
 }());
 __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Input */])(),
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["p" /* Input */])(),
     __metadata("design:type", Object)
 ], TaskItemComponent.prototype, "item", void 0);
 __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Input */])(),
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["p" /* Input */])(),
     __metadata("design:type", Object)
 ], TaskItemComponent.prototype, "avatar", void 0);
 __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["q" /* Output */])(),
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* Output */])(),
     __metadata("design:type", Object)
 ], TaskItemComponent.prototype, "taskClick", void 0);
 __decorate([
@@ -2407,14 +2411,14 @@ __decorate([
     __metadata("design:returntype", void 0)
 ], TaskItemComponent.prototype, "onMouseleave", null);
 TaskItemComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Component */])({
         selector: 'app-task-item',
         template: __webpack_require__("../../../../../src/app/task/task-item/task-item.component.html"),
         styles: [__webpack_require__("../../../../../src/app/task/task-item/task-item.component.scss")],
         animations: [
             __WEBPACK_IMPORTED_MODULE_1__anims_item_anim__["a" /* itemAnim */]
         ],
-        changeDetection: __WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* ChangeDetectionStrategy */].OnPush
+        changeDetection: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Q" /* ChangeDetectionStrategy */].OnPush
     }),
     __metadata("design:paramtypes", [])
 ], TaskItemComponent);
@@ -2472,11 +2476,11 @@ var TaskListComponent = (function () {
     return TaskListComponent;
 }());
 TaskListComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Component */])({
         selector: 'app-task-list',
         template: __webpack_require__("../../../../../src/app/task/task-list/task-list.component.html"),
         styles: [__webpack_require__("../../../../../src/app/task/task-list/task-list.component.css")],
-        changeDetection: __WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* ChangeDetectionStrategy */].OnPush
+        changeDetection: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Q" /* ChangeDetectionStrategy */].OnPush
     }),
     __metadata("design:paramtypes", [])
 ], TaskListComponent);
